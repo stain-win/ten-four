@@ -1,0 +1,8 @@
+{
+    "name": "@stain-win/tf-ui/components",
+    "ngPackage": {
+        "lib": {
+            "entryFile": "./public_api.ts"
+        }
+    }
+}
