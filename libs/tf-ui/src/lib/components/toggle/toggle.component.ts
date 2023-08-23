@@ -1,4 +1,10 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, forwardRef} from '@angular/core';
+import {
+    ChangeDetectionStrategy,
+    ChangeDetectorRef,
+    Component,
+    ElementRef,
+    forwardRef,
+} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {NG_VALUE_ACCESSOR} from '@angular/forms';
 
@@ -17,8 +23,10 @@ import {NG_VALUE_ACCESSOR} from '@angular/forms';
         },
     ],
     host: {
-
-    }
+    },
+    outputs: [
+        'valueChange',
+    ],
 })
 export class ToggleComponent {
     protected _value: boolean = false;
@@ -30,11 +38,9 @@ export class ToggleComponent {
         this._value = value;
     }
 
-    get ariaChecked(): boolean {
-        return this._value;
-    }
-
-    constructor(protected changeDetectorRef: ChangeDetectorRef) {
+    constructor( _elementRef: ElementRef<HTMLElement>,
+                 _changeDetectorRef: ChangeDetectorRef,
+                 ) {
     }
 
 }

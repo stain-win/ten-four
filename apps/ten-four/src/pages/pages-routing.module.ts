@@ -5,7 +5,10 @@ import {HomeComponent} from './home/home.component';
 const routes: Routes = [
     {
         path: '', component: HomeComponent,
-    }
+    },
+    {
+        path: 'login', loadComponent: () => import('./login/login.component').then(m => m.LoginComponent),
+    },
 ];
 
 @NgModule({

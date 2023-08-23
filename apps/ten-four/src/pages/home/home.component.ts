@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ToggleComponent} from '@stain-win/tf-ui/components';
 
@@ -10,4 +10,6 @@ import {ToggleComponent} from '@stain-win/tf-ui/components';
     styleUrls: ['./home.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {}
+export class HomeComponent {
+    darkMode = signal<boolean>(false)
+}
