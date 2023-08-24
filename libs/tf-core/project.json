@@ -1,7 +1,7 @@
 {
   "name": "tf-core",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "../src",
+  "sourceRoot": "../src/lib",
   "prefix": "tfc",
   "tags": [],
   "projectType": "library",

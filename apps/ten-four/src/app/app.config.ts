@@ -1,10 +1,17 @@
-import { ApplicationConfig } from '@angular/core';
+import {ApplicationConfig, importProvidersFrom} from '@angular/core';
 import {
   provideRouter,
   withEnabledBlockingInitialNavigation,
 } from '@angular/router';
 import { appRoutes } from './app.routes';
+import {BootstrapModule} from '@stain-win/tf-core/bootstrap/bootstrap.module';
+
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(appRoutes, withEnabledBlockingInitialNavigation())],
+  providers: [
+      provideRouter(appRoutes, withEnabledBlockingInitialNavigation()),
+      importProvidersFrom(
+          BootstrapModule.forRoot({}),
+      ),
+  ],
 };
