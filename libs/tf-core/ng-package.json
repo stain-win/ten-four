@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/libs/tf-core",
+  "dest": "../../dist/libs/tf-core",
   "lib": {
     "entryFile": "src/lib/public_api.ts"
   }

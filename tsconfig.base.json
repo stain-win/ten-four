@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@stain-win/tf-core": ["libs/tf-core/src/index.ts"],
+      "@stain-win/tf-core": ["libs/tf-core/src/lib/index.ts"],
       "@stain-win/tf-core/*": ["libs/tf-core/src/lib/*"],
       "@stain-win/tf-ui": ["libs/tf-ui/src/index.ts"],
       "@stain-win/tf-ui/*": ["libs/tf-ui/src/lib/*"]

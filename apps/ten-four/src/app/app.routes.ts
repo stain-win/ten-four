@@ -1,11 +1,10 @@
 import { Route } from '@angular/router';
-import {FofComponent} from '../fof/fof.component';
 export const NOT_FOUND_ROUTE = '40x';
 
 export const CORE_ROUTES_CONFIG: Route[] = [
     {
         path: NOT_FOUND_ROUTE,
-        component: FofComponent,
+        loadComponent: () => import('../fof/fof.component').then(m => m.FofComponent),
     },
     {
         path: '**',

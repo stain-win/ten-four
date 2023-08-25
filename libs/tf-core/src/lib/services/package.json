@@ -1,8 +1,0 @@
-{
-  "name": "@stain-win/tf-core/services",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "./public_api.ts"
-    }
-  }
-}
