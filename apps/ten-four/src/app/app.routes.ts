@@ -4,7 +4,7 @@ export const NOT_FOUND_ROUTE = '40x';
 export const CORE_ROUTES_CONFIG: Route[] = [
     {
         path: NOT_FOUND_ROUTE,
-        loadComponent: () => import('../fof/fof.component').then(m => m.FofComponent),
+        loadComponent: () => import('../components/fof/fof.component').then(m => m.FofComponent),
     },
     {
         path: '**',
