@@ -1,7 +1,13 @@
 <label>
 <input
+        #el
         type="checkbox"
         role="switch"
         class="toggle toggle-warning"
-        [checked]="value" />
+        (click)="onClick($event, el)"
+        (change)="onInputChange($event)"
+        (focus)="onFocus($event)"
+        (blur)="onBlur($event)"
+        [attr.aria-checked]="checked"
+ />
 </label>
